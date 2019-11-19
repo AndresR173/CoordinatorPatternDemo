@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		BA55246C23833ECC00E73D3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55246B23833ECC00E73D3F /* AppDelegate.swift */; };
-		BA55246E23833ECC00E73D3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55246D23833ECC00E73D3F /* SceneDelegate.swift */; };
 		BA55247023833ECC00E73D3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55246F23833ECC00E73D3F /* ViewController.swift */; };
-		BA55247323833ECC00E73D3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA55247123833ECC00E73D3F /* Main.storyboard */; };
 		BA55247523833ED000E73D3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA55247423833ED000E73D3F /* Assets.xcassets */; };
 		BA55247823833ED000E73D3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA55247623833ED000E73D3F /* LaunchScreen.storyboard */; };
+		BA55248123833F8300E73D3F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55248023833F8300E73D3F /* Coordinator.swift */; };
+		BA55248323833FDA00E73D3F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55248223833FDA00E73D3F /* MainCoordinator.swift */; };
+		BA5524862383443200E73D3F /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5524852383443200E73D3F /* BuyViewController.swift */; };
+		BA5524882383445000E73D3F /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5524872383445000E73D3F /* CreateAccountViewController.swift */; };
+		BA55248A238344AD00E73D3F /* BuyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA552489238344AD00E73D3F /* BuyCoordinator.swift */; };
+		BA55248D23842FAD00E73D3F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA55248C23842FAD00E73D3F /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA55246823833ECC00E73D3F /* CoordinatorPatternDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorPatternDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA55246B23833ECC00E73D3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA55246D23833ECC00E73D3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BA55246F23833ECC00E73D3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BA55247223833ECC00E73D3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA55247423833ED000E73D3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA55247723833ED000E73D3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA55247923833ED000E73D3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA55248023833F8300E73D3F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BA55248223833FDA00E73D3F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		BA5524852383443200E73D3F /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		BA5524872383445000E73D3F /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		BA552489238344AD00E73D3F /* BuyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCoordinator.swift; sourceTree = "<group>"; };
+		BA55248C23842FAD00E73D3F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		BA55246A23833ECC00E73D3F /* CoordinatorPatternDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BA55248B23842FA300E73D3F /* Models */,
+				BA5524842383441600E73D3F /* ViewControllers */,
+				BA55247F23833F7400E73D3F /* Coordinators */,
 				BA55246B23833ECC00E73D3F /* AppDelegate.swift */,
-				BA55246D23833ECC00E73D3F /* SceneDelegate.swift */,
-				BA55246F23833ECC00E73D3F /* ViewController.swift */,
-				BA55247123833ECC00E73D3F /* Main.storyboard */,
 				BA55247423833ED000E73D3F /* Assets.xcassets */,
 				BA55247623833ED000E73D3F /* LaunchScreen.storyboard */,
 				BA55247923833ED000E73D3F /* Info.plist */,
 			);
 			path = CoordinatorPatternDemo;
+			sourceTree = "<group>";
+		};
+		BA55247F23833F7400E73D3F /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				BA55248023833F8300E73D3F /* Coordinator.swift */,
+				BA55248223833FDA00E73D3F /* MainCoordinator.swift */,
+				BA552489238344AD00E73D3F /* BuyCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		BA5524842383441600E73D3F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA55246F23833ECC00E73D3F /* ViewController.swift */,
+				BA5524852383443200E73D3F /* BuyViewController.swift */,
+				BA5524872383445000E73D3F /* CreateAccountViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BA55248B23842FA300E73D3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA55248C23842FAD00E73D3F /* Item.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +163,6 @@
 			files = (
 				BA55247823833ED000E73D3F /* LaunchScreen.storyboard in Resources */,
 				BA55247523833ED000E73D3F /* Assets.xcassets in Resources */,
-				BA55247323833ECC00E73D3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +173,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5524882383445000E73D3F /* CreateAccountViewController.swift in Sources */,
 				BA55247023833ECC00E73D3F /* ViewController.swift in Sources */,
+				BA5524862383443200E73D3F /* BuyViewController.swift in Sources */,
+				BA55248323833FDA00E73D3F /* MainCoordinator.swift in Sources */,
+				BA55248D23842FAD00E73D3F /* Item.swift in Sources */,
+				BA55248A238344AD00E73D3F /* BuyCoordinator.swift in Sources */,
 				BA55246C23833ECC00E73D3F /* AppDelegate.swift in Sources */,
-				BA55246E23833ECC00E73D3F /* SceneDelegate.swift in Sources */,
+				BA55248123833F8300E73D3F /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BA55247123833ECC00E73D3F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA55247223833ECC00E73D3F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BA55247623833ED000E73D3F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KL5CTQ2N5S;
 				INFOPLIST_FILE = CoordinatorPatternDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KL5CTQ2N5S;
 				INFOPLIST_FILE = CoordinatorPatternDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
